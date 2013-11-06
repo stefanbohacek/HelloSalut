@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.11.226.2:3306
--- Generation Time: Nov 05, 2013 at 10:43 PM
+-- Generation Time: Nov 06, 2013 at 12:43 PM
 -- Server version: 5.1.69
 -- PHP Version: 5.3.3
 
@@ -51,7 +51,7 @@ INSERT INTO `ip2nationCountries` (`code`, `country`, `hello`) VALUES
 ('aq', 'Antarctica', 'Hello'),
 ('ar', 'Argentina', 'Hola'),
 ('as', 'American Samoa', 'Hello'),
-('at', 'Austria', 'Grüßgott'),
+('at', 'Austria', 'Gr&uuml;&szlig;gott'),
 ('au', 'Australia', 'Hello'),
 ('aw', 'Aruba', 'Hallo'),
 ('az', 'Azerbaijan', 'Salam'),
@@ -219,7 +219,7 @@ INSERT INTO `ip2nationCountries` (`code`, `country`, `hello`) VALUES
 ('qa', 'Qatar', ''),
 ('re', 'Reunion', ''),
 ('ro', 'Romania', 'Salut'),
-('ru', 'Russia', 'Privet'),
+('ru', 'Russia', '&#1087;&#1088;&#1080;&#1074;&#1077;&#1090;'),
 ('rw', 'Rwanda', ''),
 ('sa', 'Saudi Arabia', '&#1605;&#1585;&#1581;&#1576;&#1575;'),
 ('sb', 'Solomon Islands', ''),
@@ -256,7 +256,7 @@ INSERT INTO `ip2nationCountries` (`code`, `country`, `hello`) VALUES
 ('tv', 'Tuvalu', ''),
 ('tw', 'Taiwan', '&#20320;&#22909;'),
 ('tz', 'Tanzania', ''),
-('ua', 'Ukraine', 'Pryvit'),
+('ua', 'Ukraine', '&#1087;&#1088;&#1080;&#1074;&#1110;&#1090;'),
 ('ug', 'Uganda', ''),
 ('uk', 'United Kingdom', 'Hi'),
 ('us', 'United States', 'Hi'),
