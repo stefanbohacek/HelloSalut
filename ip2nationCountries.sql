@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.11.226.2:3306
--- Generation Time: Nov 06, 2013 at 12:43 PM
+-- Generation Time: Nov 06, 2013 at 03:57 PM
 -- Server version: 5.1.69
 -- PHP Version: 5.3.3
 
@@ -142,7 +142,7 @@ INSERT INTO `ip2nationCountries` (`code`, `country`, `hello`) VALUES
 ('iq', 'Iraq', ''),
 ('ir', 'Iran', ''),
 ('is', 'Iceland', 'Hæ'),
-('it', 'Italy', 'Ciào'),
+('it', 'Italy', 'Ci&agrave;o'),
 ('jm', 'Jamaica', 'Hello'),
 ('jo', 'Jordan', ''),
 ('jp', 'Japan', '&#12371;&#12435;&#12395;&#12385;&#12399;'),

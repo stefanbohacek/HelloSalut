@@ -1,4 +1,4 @@
-HelloSalut: Hello as a service
+HelloSalut: Hello as a Service
 ==============================
 
 Say hello to your visitors in their native language!
