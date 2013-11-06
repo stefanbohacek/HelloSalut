@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.11.226.2:3306
--- Generation Time: Nov 06, 2013 at 03:57 PM
+-- Generation Time: Nov 06, 2013 at 04:03 PM
 -- Server version: 5.1.69
 -- PHP Version: 5.3.3
 
@@ -47,7 +47,7 @@ INSERT INTO `ip2nationCountries` (`code`, `country`, `hello`) VALUES
 ('al', 'Albania', 'Tungjatjeta'),
 ('am', 'Armenia', '&#1378;&#1377;&#1408;&#1415;'),
 ('an', 'Netherlands Antilles', 'Halo'),
-('ao', 'Angola', 'Olá'),
+('ao', 'Angola', 'Ol&aacute;'),
 ('aq', 'Antarctica', 'Hello'),
 ('ar', 'Argentina', 'Hola'),
 ('as', 'American Samoa', 'Hello'),
@@ -67,7 +67,7 @@ INSERT INTO `ip2nationCountries` (`code`, `country`, `hello`) VALUES
 ('bm', 'Bermuda', 'Hello'),
 ('bn', 'Brunei Darussalam', 'Hai'),
 ('bo', 'Bolivia', 'Hola'),
-('br', 'Brazil', 'Olá'),
+('br', 'Brazil', 'Ol&aacute;'),
 ('bs', 'Bahamas', 'Hello'),
 ('bt', 'Bhutan', ''),
 ('bv', 'Bouvet Island', ''),
@@ -165,7 +165,7 @@ INSERT INTO `ip2nationCountries` (`code`, `country`, `hello`) VALUES
 ('lr', 'Liberia', ''),
 ('ls', 'Lesotho', ''),
 ('lt', 'Lithuania', 'Labas'),
-('lu', 'Luxembourg', 'Moïen'),
+('lu', 'Luxembourg', 'Mo&iuml;en'),
 ('lv', 'Latvia', 'Sveiki'),
 ('ly', 'Libya', ''),
 ('ma', 'Morocco', ''),
@@ -213,7 +213,7 @@ INSERT INTO `ip2nationCountries` (`code`, `country`, `hello`) VALUES
 ('pm', 'St. Pierre and Miquelon', ''),
 ('pn', 'Pitcairn', ''),
 ('pr', 'Puerto Rico', 'Hola'),
-('pt', 'Portugal', 'Olá'),
+('pt', 'Portugal', 'Ol&aacute;'),
 ('pw', 'Palau', ''),
 ('py', 'Paraguay', ''),
 ('qa', 'Qatar', ''),
