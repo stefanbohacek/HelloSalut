@@ -13,6 +13,6 @@ The service is currently in beta while I'm adding more languages and countries. 
 
 Notes:
 
-<sup>*</sup> You can also use the built in automatic mode.
+*You can also use the built in automatic mode.
 
-<sup>**</sup> I am using a modified database from http://www.ip2nation.com/.
+**I am using a modified database from http://www.ip2nation.com/.
