@@ -129,6 +129,7 @@ else{
 	if (isset($_REQUEST['mode'])){
 		switch ($_REQUEST['mode']){
 			case "auto":
+				getHelloFromIP(getIP());
 				getHelloFromLang(getDefaultLanguage());
 			break; 
 		}
