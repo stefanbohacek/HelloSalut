@@ -7,7 +7,7 @@ Say hello to your visitors in their native language!
 2. Make a call to HelloSalut
 3. Say hello!**
 
-The service is currently in beta while I'm adding more languages and countries. For a live example and more information, please see http://hellosalut-ftfish.rhcloud.com/hello/
+The service is currently in beta while I'm adding more languages and countries. For a live example and more information, please see http://fourtonfish.com/hellosalut/hello/
 
 ***
 
