@@ -3,7 +3,7 @@ HelloSalut: Hello as a Service
 
 Say hello to your visitors in their native language!
 
-1. Get your visitor's default language and IP using your preferred methods*
+1. Get your visitor's IP address and/or default language using your preferred methods*
 2. Make a call to HelloSalut
 3. Say hello!**
 
