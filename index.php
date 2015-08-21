@@ -1,7 +1,7 @@
 <?php
  $hellosalut = array(
-	"code" => "none",
-	"hello" => "Hello"
+  "code" => "none",
+  "hello" => "Hello"
 );
 
 function getIP() {
@@ -53,90 +53,121 @@ function parseDefaultLanguage($http_accept, $deflang = "en") {
 }
 
 function getHelloFromLang($lang) {
-		$connection = mysqli_connect(getenv('OPENSHIFT_MYSQL_DB_HOST'), getenv('OPENSHIFT_MYSQL_DB_USERNAME'), getenv('OPENSHIFT_MYSQL_DB_PASSWORD'), "hellosalut", getenv('OPENSHIFT_MYSQL_DB_PORT'));
+    $connection = mysqli_connect("localhost", "root", $_SERVER['DB_PASSWORD'], "hellosalut");
+    if (mysqli_connect_errno($connection)){
+      echo "Failed to connect to the database: " . mysqli_connect_error();
+    }
 
-		if (mysqli_connect_errno($connection)){
-			echo "Failed to connect to the database: " . mysqli_connect_error();
-		}
+    $query = "SELECT 
+        cc.hello
+      FROM 
+        ip2nationCountries cc
+      WHERE 
+        cc.language = ?";
+    $stmt = $connection->prepare($query);
+    $stmt->bind_param("s", $lang);
+    $stmt->execute();
+    $stmt->bind_result($hello);
+    $stmt->fetch();
+    if (!is_null($hello)){
+      global $hellosalut;
 
-		$query = "SELECT 
-				cc.hello
-			FROM 
-				ip2nationCountries cc
-			WHERE 
-				cc.language = ?";
-		$stmt = $connection->prepare($query);
-		$stmt->bind_param("s", $lang);
-		$stmt->execute();
-		$stmt->bind_result($hello);
-		$stmt->fetch();
+      $hellosalut["code"] = $lang;
+      $hellosalut["hello"] = $hello;
+    }
+  }
 
-		if (!is_null($hello)){
-			global $hellosalut;
+function getHelloFromCountry($code) {
+    $connection = mysqli_connect("localhost", "root", $_SERVER['DB_PASSWORD'], "hellosalut");
 
-			$hellosalut["code"] = $lang;
-			$hellosalut["hello"] = $hello;
-		}
-	}
+    if (mysqli_connect_errno($connection)){
+      echo "Failed to connect to the database: " . mysqli_connect_error();
+    }
 
+    $query = "SELECT 
+        cc.hello
+      FROM 
+        ip2nationCountries cc
+      WHERE 
+        cc.code = ?";
+    $stmt = $connection->prepare($query);
+    $stmt->bind_param("s", $code);
+    $stmt->execute();
+    $stmt->bind_result($hello);
+    $stmt->fetch();
+
+    if (!is_null($hello)){
+      global $hellosalut;
+
+      $hellosalut["code"] = $code;
+      $hellosalut["hello"] = $hello;
+    }
+  }
 
 function getHelloFromIP($ipRaw) {
-		$ip = sprintf("%u\n", ip2long($ipRaw));
-		$connection = mysqli_connect(getenv('OPENSHIFT_MYSQL_DB_HOST'), getenv('OPENSHIFT_MYSQL_DB_USERNAME'), getenv('OPENSHIFT_MYSQL_DB_PASSWORD'), "hellosalut", getenv('OPENSHIFT_MYSQL_DB_PORT'));
-		if (mysqli_connect_errno($connection)){
-			echo "Failed to connect to the database: " . mysqli_connect_error();
-		}
+    $ip = sprintf("%u\n", ip2long($ipRaw));
+    $connection = mysqli_connect("localhost", "root", $_SERVER['DB_PASSWORD'], "hellosalut");
+    if (mysqli_connect_errno($connection)){
+      echo "Failed to connect to the database: " . mysqli_connect_error();
+    }
 
-		$query = "SELECT 
-				cc.code,
-				cc.hello
-			FROM 
-				ip2nationCountries cc,
-				ip2nation ip 
-			WHERE 
-				ip.ip < ? 
-			ORDER BY 
-				ip.ip DESC
-			LIMIT 0,1";
+    $query = "SELECT 
+                cc.code, 
+                cc.hello 
+              FROM 
+                ip2nationCountries cc, 
+                ip2nation ip 
+              WHERE 
+                ip.ip < ?
+              AND 
+                cc.code = ip.country 
+              ORDER BY 
+                ip.ip DESC 
+              LIMIT 0,1";
 
-		$stmt = $connection->prepare($query);
-		$stmt->bind_param("i", $ip);
-		$stmt->execute();
-		$stmt->bind_result($code, $hello);
-		$stmt->fetch();
+    $stmt = $connection->prepare($query);
+    $stmt->bind_param("i", $ip);
+    $stmt->execute();
+    $stmt->bind_result($code, $hello);
+    $stmt->fetch();
 
 
-		if (!is_null($hello)){
-			global $hellosalut;
-			$hellosalut["code"] = $code;
-			$hellosalut["hello"] = $hello;
-		}
-	}
+    if (!is_null($hello)){
+      global $hellosalut;
+      $hellosalut["code"] = $code;
+      $hellosalut["hello"] = $hello;
+    }
+  }
  
-if (!isset($_REQUEST['ip']) && !isset($_REQUEST['lang']) && !isset($_REQUEST['mode'])) {
-	echo "Please see <a href='http://fourtonfish.com/hellosalut/hello/'>http://fourtonfish.com/hellosalut/hello/</a> for details on how to use this service.";
+if (!isset($_REQUEST['ip']) && !isset($_REQUEST['lang']) && !isset($_REQUEST['mode']) && !isset($_REQUEST['cc'])) {
+  echo "Please see <a href='http://fourtonfish.com/hellosalut/hello/'>http://fourtonfish.com/hellosalut/hello/</a> for details on how to use this service.";
 }
 else{
-	if (isset($_REQUEST['mode'])){
-		switch ($_REQUEST['mode']){
-			case "auto":
-				getHelloFromIP(getIP());
-				getHelloFromLang(getDefaultLanguage());
-			break; 
-		}
-	}
-	else{
-		if (isset($_REQUEST['lang'])) {
-			getHelloFromLang($_REQUEST['lang']);
-		}
-		else{
-			if (isset($_REQUEST['ip'])) {
-				getHelloFromIP($_REQUEST['ip']);
-			}
-		}
-	}
-	header('Content-type: application/json'); 
-	echo json_encode($hellosalut);	
+  if (isset($_REQUEST['mode'])){
+    switch ($_REQUEST['mode']){
+      case "auto":
+        getHelloFromIP(getIP());
+        getHelloFromLang(getDefaultLanguage());
+      break; 
+    }
+  }
+  else{
+    if (isset($_REQUEST['lang'])) {
+      getHelloFromLang($_REQUEST['lang']);
+    }
+    else{
+      if (isset($_REQUEST['ip'])) {
+        getHelloFromIP($_REQUEST['ip']);
+      }
+      else{
+        if (isset($_REQUEST['cc'])){
+          getHelloFromCountry($_REQUEST['cc']);
+        }
+      }
+    }
+  }
+  header('Content-type: application/json'); 
+  echo json_encode($hellosalut);  
 }
 
 
