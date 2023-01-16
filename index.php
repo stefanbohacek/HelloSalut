@@ -53,7 +53,7 @@ function parseDefaultLanguage($http_accept, $deflang = "en") {
 }
 
 function getHelloFromLang($lang) {
-    $connection = mysqli_connect("localhost", "root", $_SERVER['DB_PASSWORD'], "hellosalut");
+    $connection = mysqli_connect( getenv( "DB_HOST" ), getenv( "DB_USERNAME" ), getenv( "DB_PASSWORD" ), getenv( "DB_NAME" ) );
 
     if (mysqli_connect_errno()){
       echo "Failed to connect to the database: " . mysqli_connect_error();
@@ -79,7 +79,7 @@ function getHelloFromLang($lang) {
   }
 
 function getHelloFromCountry($code) {
-    $connection = mysqli_connect("localhost", "root", $_SERVER['DB_PASSWORD'], "hellosalut");
+    $connection = mysqli_connect( getenv( "DB_HOST" ), getenv( "DB_USERNAME" ), getenv( "DB_PASSWORD" ), getenv( "DB_NAME" ) );
 
     if (mysqli_connect_errno()){
       echo "Failed to connect to the database: " . mysqli_connect_error();
@@ -107,7 +107,7 @@ function getHelloFromCountry($code) {
 
 function getHelloFromIP($ipRaw) {
     $ip = sprintf("%u\n", ip2long($ipRaw));
-    $connection = mysqli_connect("localhost", "root", $_SERVER['DB_PASSWORD'], "hellosalut");
+    $connection = mysqli_connect( getenv( "DB_HOST" ), getenv( "DB_USERNAME" ), getenv( "DB_PASSWORD" ), getenv( "DB_NAME" ) );
 
     if (mysqli_connect_errno()){
       echo "Failed to connect to the database: " . mysqli_connect_error();
