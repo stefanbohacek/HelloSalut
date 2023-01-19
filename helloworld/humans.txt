@@ -3,8 +3,8 @@
 /* TEAM */
 
 Developer & Designer: Stefan Bohacek
-Site: http://fourtonfish.com
-Twitter: @fourtonfish
+Site: http://stefanbohacek.com
+Twitter: @stefanbohacek
 Location: Bratislava, Slovakia
 
 /* SITE */

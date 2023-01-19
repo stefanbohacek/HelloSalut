@@ -9,14 +9,14 @@
 	<meta property="og:title" content="Hello world!" />
 	<meta property="og:description" content="A HelloSalut + Google Maps mashup" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://fourtonfish.com/hellosalut/helloworld/" />
-	<meta property="og:image" content="//fourtonfish.com/hellosalut/helloworld/images/helloworld.png" />	
+	<meta property="og:url" content="http://stefanbohacek.com/hellosalut/helloworld/" />
+	<meta property="og:image" content="//stefanbohacek.com/hellosalut/helloworld/images/helloworld.png" />	
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@fourtonfish">
+	<meta name="twitter:site" content="@stefanbohacek">
 	<meta name="twitter:title" content="Hello world!">
 	<meta name="twitter:description" content="A HelloSalut + Google Maps mashup">
-	<meta name="twitter:image:src" content="//fourtonfish.com/hellosalut/helloworld/images/helloworld.png">
-	<meta name="twitter:domain" content="http://fourtonfish.com/">
+	<meta name="twitter:image:src" content="//stefanbohacek.com/hellosalut/helloworld/images/helloworld.png">
+	<meta name="twitter:domain" content="http://stefanbohacek.com/">
 	<link type="text/plain" rel="author" href="humans.txt" />
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
 		<script>window.angular || document.write('<script src="js/angular.min.js"><\/script>');</script>
@@ -33,7 +33,7 @@
 	<link rel="apple-touch-icon-precomposed" href="images/favicon-152.png">
 	<link rel="icon" href="images/favicon-32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="images/favicon-64.png">	
-	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//feeds.feedburner.com/fourtonfish" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//feeds.feedburner.com/stefanbohacek" />
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<?php echo getenv('GOOGLE_MAPS_API_KEY'); ?>&amp;sensor=false">
 	</script>
 	<script type="text/javascript">
@@ -58,12 +58,12 @@
 	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
   <div class="container">
-    <p id="hello-title" addcity><a href="https://github.com/fourtonfish/HelloSalut" title="Hello as a Service: open-sourced on GitHub">HelloSalut</a> + <a href="https://developers.google.com/maps/" title="Google Maps API">Google Maps</a> by <a href="https://twitter.com/fourtonfish">@fourtonfish</a></p>
+    <p id="hello-title" addcity><a href="https://github.com/stefanbohacek/HelloSalut" title="Hello as a Service: open-sourced on GitHub">HelloSalut</a> + <a href="https://developers.google.com/maps/" title="Google Maps API">Google Maps</a> by <a href="https://twitter.com/stefanbohacek">@stefanbohacek</a></p>
   </div>
 <div id="map-canvas"/></div>
 <?php
 	include 'html/tracking.html';
 ?>
-<!-- Thanks for checking out my source code :) Feel free to say hi:  stefan@fourtonfish.com -->
+<!-- Thanks for checking out my source code :) Feel free to say hi:  stefan@stefanbohacek.com -->
 </body>
 </html>
