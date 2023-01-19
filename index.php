@@ -142,7 +142,7 @@ function getHelloFromIP($ipRaw) {
   }
  
 if (!isset($_REQUEST['ip']) && !isset($_REQUEST['lang']) && !isset($_REQUEST['mode']) && !isset($_REQUEST['cc'])) {
-  echo "Please see <a href='http://fourtonfish.com/hellosalut/hello/'>http://fourtonfish.com/hellosalut/hello/</a> for details on how to use this service.";
+  echo "Please see <a href='https://stefanbohacek.com/project/hellosalut-api/'>https://stefanbohacek.com/project/hellosalut-api/</a> for details on how to use this service.";
 }
 else{
   if (isset($_REQUEST['mode'])){

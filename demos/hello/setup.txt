@@ -1,0 +1,17 @@
+npm install gulp --save-dev && gulp
+
+
+
+
+# useful node packages 
+sudo npm install gulp-less gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-clean gulp-notify gulp-rename gulp-cache --save-dev
+
+# for manual copy
+gksu nautilus /home/stefan/npm/lib/node_modules
+# ...or 
+gksu nautilus /usr/lib/node_modules/npm/node_modules
+# ...or
+gksu nautilus /usr/lib/node_modules
+
+# watch error
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
