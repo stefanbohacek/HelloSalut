@@ -21,12 +21,12 @@ $(document).ready(function(){
 			$("#globe").attr("class", "fa fa-cog fa-spin");
 			var countries = ["ba", "cs", "si", "rs", "bg", "al", "ee", "hu", "lv", "tr", "cg", "bj", "bi", "fr", "cf", "bf", "pf", "cm", "tf", "gf", "ro", "kz", "az", "la", "cu", "ao", "pt", "br", "fi", "lu", "mm", "lt", "bt", "ph", "ke", "ec", "co", "es", "uy", "cr", "pe", "ve", "mx", "cl", "ad", "ar", "bo", "pr", "ie", "us", "uk", "io", "gy", "vg", "mt", "ag", "za", "as", "bb", "au", "vi", "ai", "jm", "aq", "bs", "ca", "bz", "nz", "eu", "cy", "ck", "01", "cc", "bm", "ne", "bw", "se", "dk", "no", "bv", "an", "id", "ch", "aw", "nl", "de", "be", "my", "bn", "is", "at", "pl", "it", "vn", "fj", "ht", "hr", "sk", "cz", "gr", "kh", "kp", "kr", "ge", "th", "bd", "sg", "in", "np", "cn", "tw", "hk", "bh", "ae", "dz", "om", "sa", "iq", "pk", "ir", "af", "eg", "il", "am", "jp", "ua", "ru", "mn", "mk", "by",];
 			var code =  countries[Math.floor(Math.random()*countries.length)];
-			$.get("https://fourtonfish.com/hellosalut/?cc=" + code, function(data){
+			$.get("https://hellosalut.stefanbohacek.dev/?cc=" + code, function(data){
 				$("#hello").html(data.hello);
 				console.log(data);
 			});
 			code =  countries[Math.floor(Math.random()*countries.length)];
-			$.get("https://fourtonfish.com/hellosalut/?cc=" + code, function(data){
+			$.get("https://hellosalut.stefanbohacek.dev/?cc=" + code, function(data){
 				$("#salut").html(data.hello.toLowerCase());
 				$("#globe").attr("class", "fa fa-globe");
 				console.log(data);
