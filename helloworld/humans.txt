@@ -3,7 +3,7 @@
 /* TEAM */
 
 Developer & Designer: Stefan Bohacek
-Site: http://stefanbohacek.com
+Site: https://stefanbohacek.com
 Twitter: @stefanbohacek
 Location: Bratislava, Slovakia
 

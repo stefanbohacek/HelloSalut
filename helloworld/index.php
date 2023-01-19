@@ -9,14 +9,14 @@
 	<meta property="og:title" content="Hello world!" />
 	<meta property="og:description" content="A HelloSalut + Google Maps mashup" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://stefanbohacek.com/hellosalut/helloworld/" />
+	<meta property="og:url" content="https://stefanbohacek.com/hellosalut/helloworld/" />
 	<meta property="og:image" content="//stefanbohacek.com/hellosalut/helloworld/images/helloworld.png" />	
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@stefanbohacek">
 	<meta name="twitter:title" content="Hello world!">
 	<meta name="twitter:description" content="A HelloSalut + Google Maps mashup">
 	<meta name="twitter:image:src" content="//stefanbohacek.com/hellosalut/helloworld/images/helloworld.png">
-	<meta name="twitter:domain" content="http://stefanbohacek.com/">
+	<meta name="twitter:domain" content="https://stefanbohacek.com/">
 	<link type="text/plain" rel="author" href="humans.txt" />
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
 		<script>window.angular || document.write('<script src="js/angular.min.js"><\/script>');</script>

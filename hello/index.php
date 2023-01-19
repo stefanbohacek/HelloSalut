@@ -12,14 +12,14 @@
 	<meta property="og:title" content="Hello, salut!" />
 	<meta property="og:description" content="Hello as a Service" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://stefanbohacek.com/hellosalut/hello/" />
-	<meta property="og:image" content="http://stefanbohacek.com/hellosalut/hello/images/helloworld-large.png" />	
+	<meta property="og:url" content="https://stefanbohacek.com/hellosalut/hello/" />
+	<meta property="og:image" content="https://stefanbohacek.com/hellosalut/hello/images/helloworld-large.png" />	
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="stefanbohacek">
 	<meta name="twitter:title" content="Hello, salut! | Hello as a Service">
 	<meta name="twitter:description" content="Hello as a Service">
-	<meta name="twitter:image:src" content="http://stefanbohacek.com/hellosalut/hello/images/helloworld-large.png">
-	<meta name="twitter:domain" content="http://stefanbohacek.com/">
+	<meta name="twitter:image:src" content="https://stefanbohacek.com/hellosalut/hello/images/helloworld-large.png">
+	<meta name="twitter:domain" content="https://stefanbohacek.com/">
 	<!--[if lt IE 9]>
 	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -167,7 +167,7 @@
 	</div>
 	<div class="panel-body">
 	<ul>
-		<!-- <li><a href="http://stefanbohacek.com">stefanbohacek.com: my personal website</a> (in the contact form)</li> -->
+		<!-- <li><a href="https://stefanbohacek.com">stefanbohacek.com: my personal website</a> (in the contact form)</li> -->
 		<li><a href="https://stefanbohacek.com/project/hellosalut-api/">Hello world!</a> (a HelloSalut demo page)</a>
 		<!-- <li><a href="http://koenklaren.nl/">koenklaren.nl: personal website of Koen Klaren</a></li> -->
 	</ul>
