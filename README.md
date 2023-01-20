@@ -1,6 +1,8 @@
 HelloSalut: Hello as a Service
 ==============================
 
+![A screenshot of Google Maps overlayed with the translations of the word "hello"](hello/images/helloworld-small.jpg)
+
 Say hello to your visitors in their native language!
 
 1. Get your visitor's IP address and/or default language using your preferred methods*
