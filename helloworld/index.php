@@ -58,7 +58,7 @@
 	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
   <div class="container">
-    <p id="hello-title" addcity><a href="https://github.com/stefanbohacek/HelloSalut" title="Hello as a Service: open-sourced on GitHub">HelloSalut</a> + <a href="https://developers.google.com/maps/" title="Google Maps API">Google Maps</a> by <a href="https://twitter.com/stefanbohacek">@stefanbohacek</a></p>
+    <p id="hello-title" addcity><a href="https://github.com/stefanbohacek/HelloSalut" title="Hello as a Service: open-sourced on GitHub">HelloSalut</a> + <a href="https://developers.google.com/maps/" title="Google Maps API">Google Maps</a> by <a href="https://stefanbohacek.online/@stefan">Stefan Bohacek</a></p>
   </div>
 <div id="map-canvas"/></div>
 <?php
