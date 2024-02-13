@@ -59,7 +59,7 @@
 				<li><a href="#source-code"><i class="fa fa-github"></i> Source code</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><p class="navbar-text">by <a href="https://twitter.com/stefanbohacek">@stefanbohacek</a></p></li>
+				<li><p class="navbar-text">by <a href="https://stefanbohacek.online/@stefan">Stefan Bohacek</a></p></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share-square-o"></i> Share <b class="caret"></b></a>
 					<ul class="dropdown-menu">
@@ -157,7 +157,7 @@
 	ar, az, be, bg, bn, bs, cs, da, de, dz, el, en, en-gb, en-us, es, et, fa, fi, fil, fr, he, hi, hr, hu, hy, id, is, it, ja, ka, kk, km, ko, lb, lo, lt, lv, mk, mn, ms, my, ne, no, pl, pt, ro, ru, sk, sl, sq, sr, sv, sw, th, tk, uk, vi, zh
 	</i></p>
 	<p>
-	If you come across any issues, notice any mistakes in translations or would like me to add a particular country or language sooner, please let me know at <a href="mailto:stefan@stefanbohacek.com" title="Email me">stefan@stefanbohacek.com</a> or <a href="https://twitter.com/stefanbohacek" title="My Twitter">@stefanbohacek</a> Also feel free to contact me if you would like your site to be listed below.
+	If you come across any issues, notice any mistakes in translations or would like me to add a particular country or language sooner, please let me know at <a href="mailto:stefan@stefanbohacek.com" title="Email me">stefan@stefanbohacek.com</a> or <a href="https://stefanbohacek.online/@stefan" title="Mastodon">@stefan</a> Also feel free to contact me if you would like your site to be listed below.
 	</p>
     </div>
 	</div>
