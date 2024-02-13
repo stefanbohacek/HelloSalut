@@ -76,7 +76,7 @@ function getHelloFromLang($lang) {
 
       $hellosalut["code"] = $lang;
       $hellosalut["hello"] = $hello;
-      $hellosalut["char_set"] = $connection->character_set_name();
+      // $hellosalut["char_set"] = $connection->character_set_name();
     }
   }
 
