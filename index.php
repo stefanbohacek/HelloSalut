@@ -54,7 +54,7 @@ function parseDefaultLanguage($http_accept, $deflang = "en") {
 
 function getHelloFromLang($lang) {
     $connection = mysqli_connect( getenv( "DB_HOST" ), getenv( "DB_USERNAME" ), getenv( "DB_PASSWORD" ), getenv( "DB_NAME" ) );
-    $connection->set_charset("UTF-8");
+    // $connection->set_charset("UTF-8");
 
     if (mysqli_connect_errno()){
       echo "Failed to connect to the database: " . mysqli_connect_error();
@@ -76,12 +76,13 @@ function getHelloFromLang($lang) {
 
       $hellosalut["code"] = $lang;
       $hellosalut["hello"] = $hello;
+      $hellosalut["char_set"] = $connection->character_set_name();
     }
   }
 
 function getHelloFromCountry($code) {
     $connection = mysqli_connect( getenv( "DB_HOST" ), getenv( "DB_USERNAME" ), getenv( "DB_PASSWORD" ), getenv( "DB_NAME" ) );
-    $connection->set_charset("UTF-8");
+    // $connection->set_charset("UTF-8");
 
     if (mysqli_connect_errno()){
       echo "Failed to connect to the database: " . mysqli_connect_error();
@@ -110,7 +111,7 @@ function getHelloFromCountry($code) {
 function getHelloFromIP($ipRaw) {
     $ip = sprintf("%u\n", ip2long($ipRaw));
     $connection = mysqli_connect( getenv( "DB_HOST" ), getenv( "DB_USERNAME" ), getenv( "DB_PASSWORD" ), getenv( "DB_NAME" ) );
-    $connection->set_charset("UTF-8");
+    // $connection->set_charset("UTF-8");
 
     if (mysqli_connect_errno()){
       echo "Failed to connect to the database: " . mysqli_connect_error();
