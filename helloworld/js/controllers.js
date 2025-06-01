@@ -225,7 +225,7 @@ app.directive("addcity", function($http){
 		element.bind("click", function(){
 //			console.log(scope.hello.capitals[scope.hello.index]);
 
-		$http.get('https://hellosalut.stefanbohacek.dev/?cc=' + scope.hello.capitals[scope.hello.index]['country']).then(function(result){			
+		$http.get('https://hellosalut.stefanbohacek.com/?cc=' + scope.hello.capitals[scope.hello.index]['country']).then(function(result){			
 			return(app.updateHello(result['data']['code'], result['data']['hello']));
 		});
 

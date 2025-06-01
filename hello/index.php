@@ -125,9 +125,9 @@
 	<p>Once we have user's language and IP address we'll call <i><abbr title="HTTPS version is also available">http</abbr>://stefanbohacek.com/hellosalut/?lang=LANGUAGECODE&ip=IPADDRESS</i> and HelloSalut will return the country code (or language code) and the translation for the word "Hello".</p>
 	<p>Some examples:</p>
 	<ul>
-		<li><a href="https://hellosalut.stefanbohacek.dev/?lang=ja" title="Using language code">https://hellosalut.stefanbohacek.dev/?lang=ja</a></li>
-		<li><a href="https://hellosalut.stefanbohacek.dev/?ip=89.120.120.120" title="Using an IP address">https://hellosalut.stefanbohacek.dev/?ip=89.120.120.120</a></li>
-		<li><a href="https://hellosalut.stefanbohacek.dev/?cc=nl" title="It is also possible to use a country code">https://hellosalut.stefanbohacek.dev/?cc=nl</a></li>
+		<li><a href="https://hellosalut.stefanbohacek.com/?lang=ja" title="Using language code">https://hellosalut.stefanbohacek.com/?lang=ja</a></li>
+		<li><a href="https://hellosalut.stefanbohacek.com/?ip=89.120.120.120" title="Using an IP address">https://hellosalut.stefanbohacek.com/?ip=89.120.120.120</a></li>
+		<li><a href="https://hellosalut.stefanbohacek.com/?cc=nl" title="It is also possible to use a country code">https://hellosalut.stefanbohacek.com/?cc=nl</a></li>
 	</ul>
 	<p>If you have a <strong>Mashape</strong> or <strong>GitHub</strong> account, you can try the API on <a href="https://www.mashape.com/stefanbohacek/hellosalut#!documentation">mashape.com</a></p>
 	<p><span id="mashape-button" data-api="hellosalut" data-name="stefanbohacek" data-icon="1"></span><script src="https://www.mashape.com/embed/button.js"></script></p>
