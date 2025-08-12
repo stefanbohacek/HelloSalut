@@ -181,18 +181,6 @@
 	<p>The database (which is a modified version of the database from <a href="http://www.ip2nation.com/" target="_blank">ip2nation.com</a>) and the PHP code that handles it are <a href="https://github.com/stefanbohacek/HelloSalut" target="_blank" title="github.com/stefanbohacek/HelloSalut">available on Github</a>.</p>
     </div>
 	</div>	
-
-	<div class="panel panel-default">
-	<div class="panel-heading">
-		<h3 class="panel-title">Notes</h3>
-	</div>
-	<div class="panel-body">
-	<ul>
-	<li>HTTPS version is also supported</li>
-	</ul>
-
-    </div>
-	</div>		
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery.min.js">\x3C/script>')</script>
