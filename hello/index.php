@@ -200,7 +200,7 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <script src="js/scripts.min.js"></script>
 <?php
-echo '<script>function showResults(response){console.log(response);	responseArray = [];	for (data in response){responseArray.push("	" + data  + ":"   + response[data] );}responseString = "{<br />" + responseArray.join(",<br />") + "<br />}";$("#results").html(responseString);$("#sayhello").html(response.hello+"!");}$.ajax({type: "GET", url: "//stefanbohacek.com/hellosalut/index.php?mode=auto", data: {"mode":"auto"}, success: function(response) {showResults(response)}});</script>';
+echo '<script>function showResults(response){console.log(response);	responseArray = [];	for (data in response){responseArray.push("	" + data  + ":"   + response[data] );}responseString = "{<br />" + responseArray.join(",<br />") + "<br />}";$("#results").html(responseString);$("#sayhello").html(response.hello+"!");}$.ajax({type: "GET", url: "https://hellosalut.stefanbohacek.com/index.php?mode=auto&mode=auto", data: {"mode":"auto"}, success: function(response) {showResults(response)}});</script>';
 ?>
 <!--
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
