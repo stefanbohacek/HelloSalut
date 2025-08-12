@@ -129,7 +129,6 @@
 		<li><a href="https://hellosalut.stefanbohacek.com/?ip=89.120.120.120" title="Using an IP address">https://hellosalut.stefanbohacek.com/?ip=89.120.120.120</a></li>
 		<li><a href="https://hellosalut.stefanbohacek.com/?cc=nl" title="It is also possible to use a country code">https://hellosalut.stefanbohacek.com/?cc=nl</a></li>
 	</ul>
-	<p>If you have a <strong>Mashape</strong> or <strong>GitHub</strong> account, you can try the API on <a href="https://www.mashape.com/stefanbohacek/hellosalut#!documentation">mashape.com</a></p>
 	<p><span id="mashape-button" data-api="hellosalut" data-name="stefanbohacek" data-icon="1"></span><script src="https://www.mashape.com/embed/button.js"></script></p>
 	<p><strong>Note:</strong> The language setting has a higher priority than IP. You can choose to either only supply the IP address or only the language (not recommended right now due to limited amount of supported languages, see below for full list). If the language or IP can not be matched, default value of "Hello" will be returned.</p>
 	<pre id="results">
